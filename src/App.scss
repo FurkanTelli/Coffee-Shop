@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c1814;
+  background-image: url(../public/images/filter-coffee.png);
+  background-size:cover;  
+  background-repeat: no-repeat;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.App {
+  .nav-bar {
+    background-color: #043827;
+    box-shadow:1px 3px 15px black;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.3rem;
+    .nav-btns {
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      img {
+        margin-right: 1rem;
+        cursor:pointer;
+        text-shadow:1px 3px 15px black;
+        border: none;
+        border-radius: 1rem;
+      }
+      h3 {
+        cursor: pointer;
+        text-shadow:1px 3px 15px black;
+      }
+      .search-bar {
+        margin:0 1rem 0 0.5rem;
+        input {
+          border:none;
+          border-radius: 4px;
+          background-color: #0c1814;
+          color: whitesmoke;
+        }
+      }
+      .coffee-type {
+        display: flex;
+        width: 100px;
+        background-color: rgb(221, 221, 221);
+        text-align: center;
+        align-items: center;
+        margin-right: 5px;
+        justify-content: center;
+        height: 40px;
+        border-radius: 1rem;
+        button {
+          cursor: pointer;
+          margin: 0 3px 0 3px;
+          font-size: 0.9vw;
+          background-color: #043827;
+          color: whitesmoke;
+          padding: 3px;
+          border-radius: 5px;
+          border: solid  #043827 1px;
+        &:active {
+          background-color: black;
+          color:whitesmoke
+        }
+        }
+        .clicked {
+          background-color: rgb(26, 12, 12);
+          color: white;
+        }
+      
+      }
+      
+      .shopping-list {
+        display: block;
+        position: absolute;
+        padding:8px;
+        background-color:rgb(26, 12, 12);
+        border: 1px solid rgb(194, 187, 187);
+        box-shadow: 1px 3px 12px gray;
+        width: 180px;
+        top: 3vw;
+        right: 6vw;
+        border-radius: 1rem;
+        h3 {
+          text-align: center;
+          color: rgb(92, 90, 90);
+        }
+        .product-on-list {
+          margin: 5px 0;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.1vw;
+          background-color: darkgray;
+          padding: 2px;
+          border-radius: 5px;
+          text-align: center;
+          color: black;
+          hr {
+            // background-color:black;
+            color: black;
+            border-color: black;
+          }
+          span {
+            display:flex;
+            place-content:flex-end;
+            cursor: pointer;
+            margin-left:5px;
+            color: darkred;
+            margin-right: 0.5rem;
+          }
+        }
+      }
+      h2 {
+        cursor: pointer;
+      
+      }
+      .total {
+        position: relative;
+        right: 18px;
+        width: 22px;
+        top: -7px;
+        text-align: center;
+        color: whitesmoke;
+        background-color:rgb(26, 12, 12); 
+        border-radius: 50%;
+      }
+      .newProduct-info {
+        display: flex;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        width: auto;
+        background-color: #0c1814; 
+        input {
+          border:none;
+          border-radius: 4px;
+          background-color: #152b23;
+          color: whitesmoke;
+          margin: 0 3px 0 3px;
+        }
+        button {
+          align-items: center;
+          margin: 0 5px 0 5px;
+          background-color: #152b23;
+          cursor: pointer;
+          color: whitesmoke;
+          padding: 3px;
+          border: none;
+          border-radius: 20%;
+        }
+      }
+    }
+  }
+  .sort-of-the-coffee {
+    display: flex;
+    justify-content: space-around;
+    background-color: #152b23;
+    color:rgb(161, 161, 161);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+    h6 {
+      background-color: #152b23;
+      color:rgb(161, 161, 161);
+      cursor: pointer;
+      border:none;
+      position:relative;
+      transition:800ms ease all;
+      outline:none;
+      &:hover {
+        color: rgb(110, 108, 108);
+      }
+      &::before,&::after {
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:0.5px;
+        width:0;
+        background:rgb(161, 161, 161);
+        transition:400ms ease all;
+      }
+      &::after {
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      &:hover::before,&:hover::after {
+        width:100%;
+        transition:800ms ease all;
+      }
+    }
+  }
+  .all-coffee {
+    display: grid;
+    // background-color: red;
+    grid-template-columns: 1fr 1fr 1fr;
+    .coffee-card {
+      // position: relative;
+      background-color: rgb(194, 187, 187);
+      cursor: pointer;
+      box-shadow:1px 5px 10px rgb(41, 41, 41);
+      border-radius:1rem;
+      margin: 1rem auto;
+      margin-top: 3rem;
+      width: 50%;
+      height: 70%;
+      text-align: center;
+      &:hover {
+        background-color:rgb(107, 103, 103); 
+      }
+      &:active {
+        background-color:rgb(51, 46, 46); 
+        color:rgb(107, 103, 103);
+      }
+      div {
+        background-color:#0c1814;
+        width: 100%;
+        height: 65%;
+        color: white;
+        padding:10px 0;
+        border-radius: 10px;
+      }
+      h5 {
+        padding: 6px 0;
+      }
+      img { 
+        border-radius: 7px;
+      }
+
+    }
+  }
+
+}

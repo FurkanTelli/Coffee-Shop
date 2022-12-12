@@ -1,0 +1,54 @@
+{
+  "filterCoffee": [
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 250g",
+      "price": 95.5,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2040.0001.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 1kg (Vanilya)",
+      "price": 425,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2040.0009.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 1kg (Karamel)",
+      "price": 425,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2040.0007.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 1kg (Fındık)",
+      "price": 425,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2040.0006.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kosta Rika 200g",
+      "price": 73.9,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/de8b4_Kosta_Rika_Yoresel_Kahve_200g.png"
+    }
+  ],
+  "turkishCoffee": [
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 100g (Damla Sakızlı)",
+      "price": 27.5,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2110.0003.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası 250g (Çok Kavrulmuş)",
+      "price": 67,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/13.300.2110.0005.png"
+    },
+    {
+      "id": "Math.random()",
+      "brand": "Kahve Dünyası(Damla Sakızlı) 1kg",
+      "price": 280,
+      "imgUrl": "https://img-kahvedunyasi.mncdn.com/kahvedunyasi/product/500x500/54f52_Damla_Sakiz_Aromali_Turk_Kahvesi_1_Kg..png"
+    }
+  ]
+}
